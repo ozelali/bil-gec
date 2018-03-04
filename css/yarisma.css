@@ -1,0 +1,38 @@
+html,body{
+  height: 100%;
+}
+
+.wrapper {
+  height: 100%;
+}
+.parent {
+    display: table;
+    table-layout: fixed;
+}
+
+.child {
+    position: center center;
+    display:table-cell;
+    vertical-align:middle;
+    text-align:center;
+}
+
+div {
+  margin: 0 auto;
+  color: black;
+  margin: auto auto;
+}
+
+.secenek
+{
+  width: 100%;
+}
+
+.secenek1
+{
+  width: 500px;
+}
+
+.butonlar {
+  width: 100%;
+}

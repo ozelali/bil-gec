@@ -1,0 +1,111 @@
+        <!DOCTYPE html>
+        <html lang="tr">
+
+
+        <head>
+          <!-- meta tagları Kütüphanesi -->
+          <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="msapplication-tap-highlight" content="no">
+          <meta name="description" content="Materialize is a Material Design Admin Template,It's modern, responsive and based on Material Design by Google. ">
+          <meta name="keywords" content="materialize, admin template, dashboard template, flat admin template, responsive admin template,">
+
+          <!-- İkonların çalışabilmesi için google api linki -->
+          <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+          <title>Giriş | BilgiProje</title>
+
+          <!-- İkon-->
+          <link rel="icon" href="images/favicon/favicon-32x32.png" sizes="32x32">
+          <!-- Favicons-->
+          <link rel="apple-touch-icon-precomposed" href="images/favicon/apple-touch-icon-152x152.png">
+          <!-- iPhone için gerekli kütüphaneler -->
+          <meta name="msapplication-TileColor" content="#00bcd4">
+          <meta name="msapplication-TileImage" content="images/favicon/mstile-144x144.png">
+          
+
+          <!-- CORE CSS-->
+          <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection">
+          <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection">
+            <!-- Custome CSS-->
+          <link href="css/custom-style.css" type="text/css" rel="stylesheet" media="screen,projection">
+          <!-- Sayfaya entegere edilmiş css dosyaları -->
+          <link href="css/style-horizontal.css" type="text/css" rel="stylesheet" media="screen,projection">
+          <link href="css/page-center.css" type="text/css" rel="stylesheet" media="screen,projection">
+          <link href="css/prism.css" type="text/css" rel="stylesheet" media="screen,projection">
+          <link href="css/perfect-scrollbar.css" type="text/css" rel="stylesheet" media="screen,projection">
+
+        </head>
+
+        <body background="img/arkaplan.png">
+          <!-- Başlangıç Sayfası Loading Kodları -->
+          <div id="loader-wrapper">
+              <div id="loader"></div>
+              <div class="loader-section section-left"></div>
+              <div class="loader-section section-right"></div>
+          </div>
+          <!-- Sayfa Bitişi Loading -->
+
+
+
+          <div id="login-page" class="row">
+            <div class="col s12 z-depth-4 card-panel">
+              <form class="login-form" id="girisform">
+                <div class="row">
+                  <div class="input-field col s12 center">
+                    <img src="img/logogiris.png" alt="" class="responsive-img">
+                  </div>
+                </div>
+                <div class="row margin">
+               <!-- Kullanıcı girişi için gerekli input tanımlamaları -->
+                  <div class="input-field col s12">
+                    <i class="mdi-social-person-outline prefix"></i>
+                    <input id="username" type="text" maxlength="13">
+                    <label for="username" class="center-align">Kullanıcı Adı</label>
+                  </div>
+                </div>
+                <div class="row margin">
+                  <div class="input-field col s12">
+                    <i class="mdi-action-lock-outline prefix"></i>
+                    <input id="password" type="password">
+                    <label for="password">  Şifre</label>
+                  </div>
+                </div>
+
+                 <div class="row">
+                  <div class="input-field col s12">
+                    <a id="giris" class="btn waves-effect waves-light col s12">Giriş</a>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field ">
+                    <p class="margin medium-small center-align"><a href="view/kayit.html">Hala Üye Değil misiniz?</a></p>
+                  </div>
+
+                </div>
+              </form>
+            </div>
+          </div>
+
+               
+
+          <!-- ================================================
+            javascript kütüphaneleri
+            ================================================ -->
+
+          <!-- jQuery Kütüphanesi -->
+          <script type="text/javascript" src="js/jquery-2.2.1.min.js"></script>
+          <!--materialize js Kütüphanesi-->
+          <script type="text/javascript" src="js/materialize.js"></script>
+          <!--prism Kütüphanesi-->
+          <script type="text/javascript" src="js/prism.js"></script>
+          <!--scrollbar Kütüphanesi-->
+          <script type="text/javascript" src="js/perfect-scrollbar.min.js"></script>
+          <script type="text/javascript" src="js/plugins.js"></script>
+
+          <script type="text/javascript" src="js/index.js"></script>
+        
+        </body>
+
+        </html>

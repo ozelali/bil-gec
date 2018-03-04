@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <!-- meta tagları Kütüphanesi -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+
+  <!-- Materialize JS Kütüphanesi-->
+    <script src="../js/jquery-2.2.1.min.js"></script>
+    <script src="../js/materialize.min.js"></script>
+    <script type="text/javascript" src="../js/siralama.js"></script>
+
+    <!-- Materialize CSS Kütüphanesi-->
+    <link href="../css/materialize.css" rel="stylesheet" />
+    <link href="../css/materialize.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="../css/siralama.css">
+    <!-- İkonların çalışabilmesi için google api linki -->      
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+  <title>Bil-Geç-Sıralama</title>
+</head>
+      <body background="../img/arkaplan.png">
+      <nav class="white darken-3" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="#" class="brand-logo"><img src="../img/bilgiproje.png"></a>
+      <ul class="right hide-on-med-and-down menuler">
+        <li><a href="#">Çıkış</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+      <!-- Kullanıcı seçeneğine göre butonlar -->
+        <li><a href="../view/yarisma.html" class="hvr-underline-from-left">Yeni Yarışma</a></li>
+        <li><a href="../view/profile.html" class="hvr-underline-from-left">Profil</a></li>
+        <li><a href="../view/main.html" class="hvr-underline-from-left">Ana Menü</a></li>
+        <br>
+        <li><a href="../index.html" class="hvr-underline-from-left">Çıkış</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons" style="color: black;">menu</i></a>
+    </div>
+  </nav>
+      <div class="row">
+      <div class="col s12 m12">
+        <div class="card-panel white">
+        <div class="pull-left ">
+            <a href="main.html" class="btn btn-default btn-xm"><i class=" large material-icons ">skip_previous</i></a>
+           </div>
+           <img class=" circle responsive-img "   src="../img/logogiris.png">
+           <br>
+            <div class="center-align"><font face="Times" color="black"><b>SIRALAMA</b></font></div>
+            
+            
+      <table class="bordered ">
+        <thead>
+          <tr>
+              <th data-field="id" style="color: black">Kullanıcı Adı</th>
+              <th data-field="name" style="color: black">Doğru Sayısı</th>
+              <th data-field="price" style="color: black">Yanlış Sayısı</th>
+              <th data-field="price" style="color: black">Puan</th>
+          </tr>
+        </thead>
+
+        <tbody style="color: black" id="siralama">
+
+        </tbody>
+      </table>
+            
+        
+        </div>
+      </div>
+    </div>
+
+
+</body>
+</html>

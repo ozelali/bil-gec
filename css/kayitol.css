@@ -1,0 +1,29 @@
+html,body{
+  height: 100%;
+}
+.wrapper {
+  height: 100%;
+}
+.parent {
+    display: table;
+    table-layout: fixed;
+}
+
+.child {
+    position: center center;
+    display:table-cell;
+    vertical-align:middle;
+    text-align:center;
+}
+
+.signdiv
+{
+
+	width: 300px;
+}
+
+div {
+  margin: 0 auto;
+  color: white;
+  margin: auto auto;
+}
