@@ -8,35 +8,8 @@
     var secenekler;
     var data2;
 $(document).ready(function() {
-/*
-
-      var countdown =  $("#countdown").countdown360({
-          radius      : 30,
-          seconds     : 30,
-          fontColor   : '#FFFFFF',
-          autostart   : false,
-          onComplete  : function () { 
-         alert("Süre Doldu Malesef... -5 Puan");
-                    puan = -5;
-                    dogrusayi = 0;
-                    yanlissayi = 1;
-                  updatePoint(puan,dogrusayi,yanlissayi);
-        location.reload();
-           }
-       });
-      countdown.start();
-      console.log('countdown360 ',countdown);
-      $(document).on("click","button",function(e){
-        e.preventDefault();
-        var type = $(this).attr("data-type");
-        
-      
-      });
-  */  
     if(document.getElementById("soruGetirme").checkValidity() ) 
       {        
-
-
             $.post('http://localhost/bilgec/service/service.php', {mode :"getSorular"}, 
                 function(data, textStatus, xhr)
                 {
@@ -97,22 +70,6 @@ $(document).ready(function() {
                 });
             });
       }
-/*
-  $("#bitir").click(function(event) {
-
-      function updatePoint(){
-        $.post('http://localhost/bilgec/service/service.php', {mode:"updatePoint",dogrusayi:dogrusayi,yanlissayi:yanlissayi,userId:localStorage.getItem("userId") }, function(data, textStatus, xhr) {
-        var data = JSON.parse(data);
-
-        });
-        window.location = "view/main.html";
-      }
-
-
-  }); 
-
-*/
-
     });
 
 
