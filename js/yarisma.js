@@ -13,13 +13,12 @@ $(document).ready(function() {
             $.post('http://localhost/bilgec/service/service.php', {mode :"getSorular"}, 
                 function(data, textStatus, xhr)
                 {
-                  // secenekler diye bir dizi oluşturduk.
                 data = JSON.parse(data);  
                 gelendata = Math.floor(Math.random() * data.length);
 
                 secenekler = [data[gelendata].scnkA , data[gelendata].scnkB , data[gelendata].scnkC , data[gelendata].scnkD];
                 secenekler = Shuffle(secenekler);
-                function Shuffle(o)  // Seçeneklerin yerlerini her seferinde değiştiren fonksiyon.
+                function Shuffle(o)
                 {
                   for(var j, x, i = o.length; i; j = parseInt(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
                   return o;
